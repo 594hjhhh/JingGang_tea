@@ -1,0 +1,87 @@
+/* 通用样式重置：清除默认 margin 和 padding，再利用 box-sizing */  
+html, body {  
+    margin: 0;  
+    padding: 0;  
+    box-sizing: border-box;  
+}  
+
+.big_title {  
+    font-size: 50px;  
+    margin: 0; /* 避免默认外边距 */  
+    text-align: left;  
+    padding: 20px 0; /* 增加适当的内间距代替外边距 */  
+}  
+
+/* 第一块容器样式 */  
+.first_container {  
+    /* background-color: #789262;   */
+    background-image: url("../imges/backgroundpicture/绿2.jpg");
+    padding-bottom: 20px; /* 顶部导航栏部分的内边距 */  
+}  
+
+/* 茶与传统文化部分 */  
+.traditionalculture {  
+    /* background-color: #f0f5e5; */
+    background-image: url("../imges/backgroundpicture/白3.jpg");
+   
+}  
+#poetry{
+    background-image: url("../imges/backgroundpicture/bg2.0.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+} 
+
+/* 诗词主体部分 */  
+.poem {  
+    font-family: "KaiTi", "楷体", serif;  
+    text-align: center;  
+    padding: 10px;  
+    /* background-color: #fff;   */
+    
+}  
+
+.title {  
+    font-size: 2em;  
+    margin: 0 0 0.5em 0; /* 调整标题间距 */  
+}  
+
+.author {  
+    font-size: 1.5em;  
+    margin: 0 0 1em 0; /* 调整边距 */  
+    color: #555;  
+}  
+
+.line {  
+    font-size: 1.2em;  
+    margin: 0.5em 0;  
+    letter-spacing: 0.1em; /* 调整字间距 */  
+}  
+
+/* 书画瀑布流部分 */  
+.waterfall-width-column {  
+    column-count: 3; /* 3 列布局 */  
+    column-gap: 10px;  
+    padding: 0 10px; /* 两侧留出 10px 的间距 */  
+}  
+
+.image-box {  
+    margin-bottom: 10px;  
+    text-align: center; /* 居中对齐标题 */  
+    break-inside: avoid; /* 防止图片和标题换列 */  
+    /* background-color: #f0f5e5;   */
+    background-image: url("../imges/backgroundpicture/白4.jpg");
+    padding: 0 5px;  
+}  
+
+.image-box img {  
+    display: block;  
+    width: 100%;  
+    border-radius: 5px; /* 可选美化 */  
+}  
+
+.image-box .title {  
+    font-family: "KaiTi", "楷体", serif;  
+    margin-top: 5px;  
+    font-size: 1.5em;  
+}  
+

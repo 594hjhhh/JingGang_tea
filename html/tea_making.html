@@ -1,0 +1,167 @@
+<!DOCTYPE html>  
+<html lang="en">  
+
+<head>  
+    <meta charset="UTF-8">  
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>制茶工艺</title> 
+    <link rel="stylesheet" href="../css/common.css"> 
+    <style>  
+        * {  
+            padding: 0;  
+            margin: 0;  
+        }  
+
+        body {  
+            display: flex;  
+            justify-content: center;  
+            align-items: center;  
+            height: 100vh;  
+            background-image: url('../imges/backgroundpicture/bg1.jpg');
+        }  
+
+        .shell {  
+            width: 90%;  
+            height: 700px;  
+            display: flex;  
+        }  
+
+        .box {  
+            flex: 1;  
+            overflow: hidden;  
+            transition: .5s;  
+            margin: 0 20px;  
+            box-shadow: 10px 10px 20px rgba(0, 0, 0, .5);  
+            border-radius: 20px;  
+            border: 10px solid #fff;  
+            background-color: #fff;  
+            position: relative;  
+        }  
+        
+        .box>img {  
+            width: 200%;  
+            height: 85%;  
+            object-fit: cover;  
+            transition: .5s;  
+        }  
+
+        .box>span {  
+            font: 200 45px 'm1Font';  
+            text-align: center;  
+            height: 15%;  
+            display: flex;  
+            justify-content: center;  
+            align-items: center;  
+        }  
+
+        .box:hover {  
+            flex-basis: 40%;  
+        }  
+
+        .box:hover>img {  
+            width: 100%;  
+            height: 100%;  
+        }  
+
+        /* 添加蒙版效果 */  
+        .overlay {  
+            position: absolute;  
+            top: 0;  
+            left: 0;  
+            width: 100%;  
+            height: 100%;  
+            background-color: rgba(0, 0, 0, 0.5);  
+            color: #fff;  
+            display: flex;
+            flex-direction: column;  
+            justify-content: center;  
+            align-items: center;  
+            /* font: 200 45px '优设标题黑';   */
+            font-family: "KaiTi", "楷体", serif;
+            font-size: 25px;
+            opacity: 0;  
+            transition: opacity 0.1s;  
+            border-radius: 20px;  
+            padding: 0 30px; /* 添加内边距，确保两侧留出 30px 的距离 */  
+            box-sizing: border-box; /* 确保 padding 不影响宽高 */  
+            text-align: left; /* 多行文字居中对齐 */  
+            line-height: 1.5; /* 增加行高，改善多行文字的可读性 */  
+        } 
+        .overlay p {  
+            text-indent: 2em; /* 首行缩进两格（2 个汉字宽度） */  
+            margin-bottom: 15px; /* 段落之间的间距 */  
+            /* font-size: 18px; 调整字体大小   */
+}   
+
+        .box:hover .overlay {  
+            opacity: 1;
+             
+        }  
+    </style>  
+</head>  
+
+<body>  
+    <div class="shell">  
+        <div class="box">  
+            <img src="../imges/tea_making/采茶.jpg">  
+            <div class="overlay"> 
+                <p>井冈翠绿茶，产于海拔千米的井冈山风景区内茨坪花果山茶园，
+                因色泽绿、汤色绿、叶底绿而得此名。井冈山四季云雾飘绕,溪水环山而流,
+                土壤疏松肥沃、雨量充沛、空气湿度大、日照光度短，千余亩茶园每年都要进行“一耕四锄回旋”整修。
+                优越的气候条件加上优良的生长环境,孕育了井冈翠绿“叶片肥、滋味浓、香气高、耐冲泡”的独待品质。</p>
+                <p>井冈翠绿茶主要以谷雨前后采摘的一芽一叶初展至一芽二叶的鲜嫩芽叶为原料，采摘时间为二十天左右。</p>
+            </div>  
+            <span>采茶</span>  
+        </div>  
+        <div class="box">  
+            <img src="../imges/tea_making/杀青.jpg">  
+            <div class="overlay">
+                <p>
+                    高温杀青，先高后低，杀匀杀透，多抖少焖，焖炒结合，
+                    锅温180摄氏度上下，随茶叶水分含量高低调节。每锅投叶量400-500克，
+                    鲜叶下锅后双手翻炒，水汽大量散发时适当地焖炒以提高叶温。
+                    杀青时间5分钟左右，至叶色由翠绿为暗绿色，梗折而不断，无焦边红梗红叶，
+                    手提捏成团为适度。
+                </p>
+            </div>  
+            <span>杀青</span>  
+        </div>  
+        <div class="box">  
+            <img src="../imges/tea_making/揉捻.jpg">  
+            <div class="overlay">
+                <p>
+                    杀青叶起锅后散开薄2-3分钟，当叶温下降尚有余热时进行揉捻。
+                    采用摊搓揉法，双手握茶在竹帘上推滚，先轻后重，先慢后快，
+                    用力必须来轻去重，先温揉2-3分钟及时解块散热，以防叶子焖黄，
+                    然后再行揉捻。揉捻过程中解块3次，时间为4-8分钟，揉捻用力不宜过重，
+                    达到60%成条率。
+                </p>
+            </div>  
+            <span>揉捻</span>  
+        </div>  
+        <div class="box">  
+            <img src="../imges/tea_making/炒坯.jpg">  
+            <div class="overlay">
+                <p>
+                    茶坯下锅温度为90-100摄氏度，投叶量350-400克，投叶后翻炒抖散将茶条理顺，
+                    置下手轻轻搓条，关与抖散相结合，防止郁焖，待叶子稍不粘手时，将锅温依次降为70度，
+                    逐渐用力搓紧条索，边搓边揉条，搓条用力掌握轻重轻原则，使茶条更紧、细、圆、卷。
+                    时间约13-15分钟至八成干时即为适当。
+                </p>
+            </div>  
+            <span>炒坯</span>  
+        </div>  
+        <div class="box">  
+            <img src="../imges/tea_making/烘干.jpg">  
+            <div class="overlay">
+                <p>炒坯起锅后凉，待叶内水分重新分布。炒坯置烘笼内用50-60度碳文火烘焙，
+                    不停翻动，至茶叶能用手捏成粉末便可，而后用竹筛割末即为成品茶。
+                </p>
+            </div>  
+            <span>烘干</span>  
+        </div>  
+    </div>  
+</body>  
+
+</html>  

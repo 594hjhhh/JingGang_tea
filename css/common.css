@@ -1,0 +1,10 @@
+@font-face{
+    /* 我自己命名为 m1Font，大标题使用 */
+    font-family: "m1Font";  
+    src: url("../font/字酷堂清楷体_爱给网_aigei_com.ttf") format("truetype");
+}
+@font-face{
+    /* 我自己命名为 m2Font */
+    font-family: "m2Font";  
+    src: url("../font/红权巩县书刻体_0.ttf") format("truetype");
+}
